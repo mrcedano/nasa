@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header-content{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 200px;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+
+    margin-bottom: 70px;
+
+    background-image:url('../img/observatoriowise.gif');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+.header-content h1{
+    margin: 0;
+    margin-bottom: 190px;
+    justify-content: center;
+}
+
+.header-text{
+   width: 800px;
+   font-weight: bolder ;
+   margin: auto;
+}
+/* Inicio cuerpo del texto*/
+
+.body-content{
+    width: 100%;    
+ 
+    margin-bottom: 5rem;
+}
+
+.body-content .inicio-titulo{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 15rem;
+      
+}
+
+.body-content .inicio-titulo header h2{
+    margin: 0;
+}
+
+
+.body-content .inicio-texto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 45%;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content .contenedor-inicio{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.body-content .inicio-imagen{
+    width: 25%;
+    margin-right: 300px;
+    background-color: aqua;
+}
+
+/* Final cuerpo del texto*/
+
+/* Inicio del Cuerpo de la informacion */
+
+.information-content{
+ width: 100%;
+}
+
+.information-content .contenedor-inicio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.information-content .inicio-imagen{
+    width: 25%;
+    margin-left: 120px;
+    background-color: aqua;
+}
+
+.information-content .inicio-titulo{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 25rem;
+}
+
+
+
+.information-content .inicio-texto{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 45%;
+  
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.information-content .middle-text{
+    background-color: red;
+}
+/* Final del Cuerpo de la informacion */
+
+.middleimage{
+
+    height: 45rem;
+    background-image:url('../img/portadaobservatoriowise.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+.final-content{
+    margin-bottom: 20px;
+}
+.final-content .final-title{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+}
+
+.final-content .final-video iframe{
+    margin: auto;
+    display: block;
+    background-color: aliceblue;
+}
+
+.final-content .final-video{
+    margin-bottom: 30px;
+}
+
+
+.final-content .button .boton img{
+    display: block;
+    margin: auto;
+    width: 30px;
+}
+
+.final-content .button{
+    text-align: center;
+
+}
+
+
+.final-content .button .boton{
+    display: inline-block;
+   
+    width: auto;
+    padding: 20px;
+    background-color: rgb(56, 180, 56);
+    border-style: solid;
+    border-color: green;
+    border-radius: 15px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+
+

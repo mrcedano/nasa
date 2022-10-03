@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+
+.container .portarda-pagina{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-image:url('../img/imagen-portada.gif');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+
+
+}
+
+.portarda-pagina .titulo-portada{
+    margin: auto;   
+}   
+
+.portarda-pagina .titulo-portada .viaje-boton{
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+
+    
+}
+
+.portarda-pagina .titulo-portada .viaje-boton:hover,
+.portarda-pagina .titulo-portada .viaje-boton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.portarda-pagina .titulo-portada .viaje-boton:active {
+  opacity: .5;
+}
+
+
+.container .ficheros-pagina{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    
+    background-image:url('../img/universe.png');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+.ficheros-pagina .titulo-ficheros{
+    margin-left: 20px;
+
+}
+
+.ficheros-pagina .titulo-ficheros p{
+    margin-left: 20px;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.ficheros-pagina .titulo-ficheros h2{
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ficheros-pagina .contenedor-ficheros{
+    display: flex;
+}
+
+.ficheros-pagina .contenedor-ficheros a {
+    width: 65%;
+    height: 380px;
+    background-color: red;
+    margin-left: 50px;
+
+    background-image:url('../img/hackaton.png');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+ .contenedor-ficheros .frase-contenedor{
+    display: flex;
+    align-items: center;
+
+    margin-left: 50px;
+    width: 25%;
+    color: white;
+    font-size: 2.9rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+

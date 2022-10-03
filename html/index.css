@@ -1,0 +1,45 @@
+* {
+    transition: all 0.25s;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: steelblue;
+    background-image: url(../img/fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 120%;
+  }
+  
+  #encabezado {
+    width: 80vw;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .opcion {
+    width: 70vw;
+    background: rgba(255, 255, 255, 0.911);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .opcion:hover{
+       background: lightgray;
+  }
+  

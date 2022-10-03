@@ -1,0 +1,119 @@
+<HTML>
+    <HEAD>
+      <TITLE> atrame</TITLE>
+      <link rel="stylesheet" href="../css/index.css">
+      <style>
+         button {
+            padding: 0;
+            border:none;
+            background: none;
+        }
+        body {
+        margin: 0;
+        font-family: var(--bs-body-font-family);
+        font-size: var(--bs-body-font-size);
+        font-weight: var(--bs-body-font-weight);
+        line-height: var(--bs-body-line-height);
+        color: var(--bs-body-color);
+        text-align: var(--bs-body-text-align);
+        background-color: var(--bs-body-bg);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background-image: url("https://supercurioso.com/wp-content/uploads/2018/05/shutterstock_306306104hyu.jpg");
+        }
+        .parraPuntos{
+          color :aliceblue;
+          font-size: 50px;
+
+        }
+        p{
+          color :aliceblue;
+        }
+      </style>
+</HEAD>
+<body >
+  <div class="contenedormenu">
+    <table>
+        <tr>
+            <td><img src="../img/nasa.png" alt="" class="imgnasa"></td>
+            <td><nav id="menu">
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="infoteles.html">informacion de los telescopios</a></li>
+                    <li><a href="">juegos</a>
+                    <ul>
+                        <li><a href="index.html">cuestionario</a></li>
+                        <li><a href="juegouno.html">captura foto</a></li>
+                        <li><a href="memorama.html">memorama</a></li>
+                        <li><a href="galeria.html">galeria interactiva</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+                </ul>
+            </nav></td>
+        </tr>
+    </table>
+</div>
+    <p>El juego consiste en que hagas click en images que hayan sido tomadas con el telescopio james webb y si hacertas se te subira un punto de lo contrario se restara, si logras un maximo de 3 puntos en el marcado pasaras el nivel</p>
+    <p class="parraPuntos" > 0</p>
+    <button Class="Boton" STYLE="position:relative"><img src="http://www.larepublica.ec/wp-content/uploads/2016/06/satelite-chino.jpg" width="150px"></button>
+    <button Class="Boton1" STYLE="position:relative"><img src="https://cdn.forbes.pe/2022/07/Stellar-Death-EFEEPANASA-ESA-CSA-1.jpg" width="150px"></button>
+    <button Class="boton2" STYLE="position:relative"><img src="https://estaticos.elperiodico.com/resources/jpg/0/7/primera-imagen-agujero-negro-1554908865570.jpg" width="150px"></button>
+    <button Class="boton3" STYLE="position:relative"><img src="https://cdn.forbes.pe/2022/07/83916ef06a72515d0c3ff84be2ed341873e56343-1-768x736.jpg" width="150px"></button>
+    <button Class="boton4" STYLE="position:relative"><img src="https://cdn.forbes.pe/2022/07/ec6bb15dd6d98b809e8506d875111db506dc77b8-1024x593.jpg" width="150px"></button>
+
+    <script>
+      var contador=0;
+     const puntaje=document.querySelector('.parraPuntos')
+      const Boton = document.querySelector('.Boton');
+      const Boton1 = document.querySelector('.Boton1');
+      const boton2 = document.querySelector('.boton2');
+      const boton3 = document.querySelector('.boton3');
+      const boton4 = document.querySelector('.boton4');
+      
+        function aleatorio(maximo) {
+          return Math.floor(Math.random() * 500) + 1;
+        }
+        function CambiaPosicion(){
+          Boton.style.top=aleatorio(window.screen.height-100);
+          Boton.style.left=aleatorio(window.screen.width-150);
+          Boton1.style.top=aleatorio(window.screen.height-100);
+          Boton1.style.left=aleatorio(window.screen.width-200);
+          boton2.style.top=aleatorio(window.screen.height-100);
+          boton2.style.left=aleatorio(window.screen.width-250);  
+          boton3.style.top=aleatorio(window.screen.height-100);
+          boton3.style.left=aleatorio(window.screen.width-200); 
+          boton4.style.top=aleatorio(window.screen.height-100);
+          boton4.style.left=aleatorio(window.screen.width-200); 
+         
+        }
+     
+        function conteo() {
+          if (contador == 3) {
+            window.location="../index.html"
+          }else{
+            contador++;
+            puntaje.textContent=" "+contador;
+          }
+          
+        }
+        function menos() {
+          contador--;
+          puntaje.textContent=" "+contador;
+        }
+      
+        Boton.addEventListener('mouseover', CambiaPosicion);
+        Boton.addEventListener('click',menos);
+        Boton1.addEventListener('mouseover', CambiaPosicion);
+        Boton1.addEventListener('click',conteo);
+        boton2.addEventListener('mouseover', CambiaPosicion);
+        boton2.addEventListener('click',menos);
+        boton3.addEventListener('mouseover', CambiaPosicion);
+        boton3.addEventListener('click',conteo);
+        boton4.addEventListener('mouseover', CambiaPosicion);
+        boton4.addEventListener('click',conteo);
+       
+      </script>
+</body>
+</HTML>
